@@ -8,42 +8,24 @@
     body {
       font-family: sans-serif;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      height: 100vh;
       margin: 0;
       background: #f0f4f8;
     }
     h1 {
       color: #333;
     }
-    .code-block {
-      background: #1e1e1e;
-      color: #d4d4d4;
-      padding: 1.5rem 2rem;
-      border-radius: 8px;
-      font-family: monospace;
-      font-size: 1rem;
-      white-space: pre;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      max-width: 90vw;
-      overflow-x: auto;
-    }
-    .keyword       { color: #569cd6; }
-    .string        { color: #ce9178; }
-    .comment       { color: #6a9955; }
-    .fn            { color: #dcdcaa; }
-    .template-expr { color: #569cd6; }
   </style>
 </head>
 <body>
   <h1>Hello, GitHub Pages! 👋</h1>
-  <pre class="code-block"><code><span class="comment">// Hello World in JavaScript</span>
-<span class="keyword">function</span> <span class="fn">greet</span>(name) {
-  <span class="keyword">return</span> <span class="string">`Hello, <span class="template-expr">${name}</span>!`</span>;
+  <pre><code>// Hello World in JavaScript
+function greet(name) {
+  return `Hello, ${name}!`;
 }
 
-console.<span class="fn">log</span>(<span class="fn">greet</span>(<span class="string">"World"</span>));</code></pre>
+console.log(greet("World"));</code></pre>
 </body>
 </html>
