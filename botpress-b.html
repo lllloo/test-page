@@ -16,9 +16,27 @@
   </nav>
   <main>
     <h1>Botpress B 🤖</h1>
+    <article>
+      <h2>相思 — 王維</h2>
+      <p>A 紅豆生南國，</p>
+      <p>B 春來發幾枝。</p>
+      <p>C 願君多採擷，</p>
+      <p>D 此物最相思。</p>
+    </article>
   </main>
   <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
   <script src="https://files.bpcontent.cloud/2026/03/20/01/20260320014645-ZVI72BHA.js" defer></script>
   <script src="botpress.js"></script>
+  <script>
+    window.botpress.on('webchat:initialized', () => {
+      window.botpress.updateUser({
+        data: {
+          poem_title: "相思",
+          poem_author: "王維",
+          poem_content: "A 紅豆生南國，B 春來發幾枝。C 願君多採擷，D 此物最相思。"
+        }
+      });
+    });
+  </script>
 </body>
 </html>
