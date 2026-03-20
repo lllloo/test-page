@@ -24,8 +24,16 @@ nav a.active {
   background: #555;
 }
 main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: calc(100vh - 52px);
+}
+main article {
+  text-align: center;
 }
 h1 {
   color: #333;
+  margin-bottom: 30px;
 }
