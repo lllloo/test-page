@@ -30,7 +30,12 @@
   <script>
     window.chatbase("identify", {
       user_id: "visitor",
-      user_metadata: "用戶目前在：Chatbase A 頁面。頁面顯示的詩：李白《靜夜思》- 床前明月光，疑是地上霜。舉頭望明月，低頭思故鄉。"
+      user_metadata: {
+        current_page: "Chatbase A 頁面",
+        poem_title: "靜夜思",
+        poem_author: "李白",
+        poem_content: "床前明月光，疑是地上霜。舉頭望明月，低頭思故鄉。"
+      }
     });
   </script>
 </body>

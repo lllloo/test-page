@@ -30,7 +30,12 @@
   <script>
     window.chatbase("identify", {
       user_id: "visitor",
-      user_metadata: "用戶目前在：Chatbase B 頁面。頁面顯示的詩：孟浩然《春曉》- 春眠不覺曉，處處聞啼鳥。夜來風雨聲，花落知多少。"
+      user_metadata: {
+        current_page: "Chatbase B 頁面",
+        poem_title: "春曉",
+        poem_author: "孟浩然",
+        poem_content: "春眠不覺曉，處處聞啼鳥。夜來風雨聲，花落知多少。"
+      }
     });
   </script>
 </body>
