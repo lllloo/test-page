@@ -32,11 +32,11 @@
   const currentPage = window.location.pathname;
   let messages = [];
 
-  if (currentPage.includes('/page-a.html')) {
+  if (currentPage.includes('/chatbase-a.html')) {
     messages = [
       "這是在A頁面上的訊息。",
     ];
-  } else if (currentPage.includes('/page-b.html')) {
+  } else if (currentPage.includes('/chatbase-b.html')) {
     messages = [
       "這是在B頁面上的訊息。",
     ];
