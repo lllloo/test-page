@@ -16,7 +16,22 @@
   </nav>
   <main>
     <h1>Chatbase A 🅰️</h1>
+    <article>
+      <h2>靜夜思 — 李白</h2>
+      <p>床前明月光，</p>
+      <p>疑是地上霜。</p>
+      <p>舉頭望明月，</p>
+      <p>低頭思故鄉。</p>
+    </article>
   </main>
-  <script src="main.js" defer></script>
+  <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="j9Lh2F3IAy8j9DoOjdRZx";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
+  <script>
+    window.chatbase("identify", {
+      user_id: "visitor",
+      user_metadata: "用戶目前在：Chatbase A 頁面。頁面顯示的詩：李白《靜夜思》- 床前明月光，疑是地上霜。舉頭望明月，低頭思故鄉。"
+    });
+  </script>
 </body>
 </html>
